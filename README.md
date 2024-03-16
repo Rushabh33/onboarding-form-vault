@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Rushabh's Submission, due EoD (5pm), March 16th
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**What I was able to do:**
+- Create a working application that satisfies the requirements
+- Apply code too simulate creating this project in a company code base
+-   Add reusable componets, connected the step counter, added a nested react Context to encourage separation,
+- Set up testing for the first time and create initial tests
+- I may have bit off more than I could chew by using Next.JS but I wanted to get better using it and I was happy with the result.
+  
+**Things I would do if I had more time:**
+- Abstract out my onboarding/page.tsx file into various components to make it more readable
+- Convert the form inputs to controlled components to improve user experience and facilitate validation
+- Finish writing the tests!
+  - This was my first time setting up tests in a project from scratch. Although I managed to set things up, I struggled to implement the final tests to verify the form. This would have been possible with msw (first time using this as well). I need more time to read through the documents to facilitate the test. Conceptually I know what I would do, but I struggled with syntax
+    - I would create handlers that minmic the specific requests my /onboarding/page.tsx file is making
+    - I would setup the servers in my tests and apply them before/during/after each test.
+- Add yup schema validation to my react-hook-form to abstract the code and apply better type safety to the form. I had actually tried using ZOD, I was running into issues. I found a cleaner solution with Yup and was thinking of implementing it if I had the time. 
